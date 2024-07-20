@@ -20,12 +20,12 @@ import {
 import GenAI from "./views/Dashboard/GenAI";
 import Tab2 from "./views/Dashboard/Tab2";
 import Tab3 from "./views/Dashboard/Tab3";
+import Test from "./views/Dashboard/Test";
 
 var dashRoutes = [
     {
         path: "/dashboard",
         name: "Models",
-        rtlName: "لوحة القيادة",
         icon: <HomeIcon color='inherit'/>,
         component: Dashboard,
         layout: "/admin",
@@ -49,6 +49,13 @@ var dashRoutes = [
         name: "GenAi",
         icon: <CreditIcon color='inherit'/>,
         component: GenAI,
+        layout: "/admin",
+    },
+    {
+        path: "/Test",
+        name: "Test",
+        icon: <CreditIcon color='inherit'/>,
+        component: Test,
         layout: "/admin",
     },
 ];
