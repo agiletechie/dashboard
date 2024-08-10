@@ -1,0 +1,12 @@
+.line-chart-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.line-chart-container>* {
+    flex: 1;
+    overflow: hidden;
+    /* Ensure each chart fits within its flex container */
+}
